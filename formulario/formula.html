@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <title>formulario</title>
+        <script type="text/javascript" src="multiselect-dropdown.js"></script>
+        <style type="text/css">
+            select{
+             width: 30em;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+        <div>
+            <label for="nom">Nombres y apellidos</label>
+            <input type="text" id="nom" name="nom" placeholder="...." required>
+        </div>
+        <br>
+        <div>
+            <label for="fecha">Fecha de Nacimiento</label>
+            <input type="date" id="fecha" name="fecha" placeholder="...."required>
+        </div>
+        <br>
+        <div>
+            <label for="ocup">Ocupación</label>
+            <input type="text" id="ocup" name="ocup" placeholder="...."required>
+        </div>
+        <br>
+        <div>
+            <label for="contac">Contacto (telefono, email)</label>
+            <input type="text" id="contac" name="contac" placeholder="...."required>
+        </div>
+        <br>
+        <div>
+            <label for="nacion">Nacionalidad</label>
+            <select id="nacion" name="nacion">
+                <option value="Perú">Perú</option>
+                <option value="Chile">Chile</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Argentina">Argentina</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="ing">Nivel de ingles:</label>
+            <label for="Básico">Basico</label>
+            <input type="radio" id="Básico" name="Básico" value="Básico"> 
+            <label for="Intermedio">Intermedio</label>
+            <input type="radio" id="Intermedio" name="Intermedio" value="Intermedio">     
+            <label for="Avanzado">Avanzado</label>
+            <input type="radio" id="Avanzado" name="Avanzado" value="Avanzado">     
+            <label for="Fluido">Fluido</label>
+            <input type="radio" id="Fluido" name="Fluido" value="Fluido">          
+        </div>
+        <br>
+        <div>
+            <label for="prog">Lenguajes de programación</label>
+            <select name="prog" multiple>
+                <option>C++</option>
+                <option>Python</option>
+                <option>Java</option>
+                <option>HTML</option>
+                <option>C</option>
+                <option>C#</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="apt">Aptitudes</label>
+            <input list="Aptitudes"required>
+            <datalist id="Aptitudes">
+                <option value="Liderazgo"></option>
+                <option value="Comunicación"></option>
+                <option value="Perseverancia"></option>
+                <option value="Resiliencia"></option>
+            </datalist>
+        </div>
+        <br>
+        <div>
+            <label for="habil">Habilidades:</label>
+            <label for="Base de datos">Base de datos</label>
+            <input type="checkbox" id="Base de datos" name="habil" required>
+            <label for="Algoritmos">Algoritmos</label>
+            <input type="checkbox" id="Algoritmos" name="habil" required>
+            <label for="Paginas web">Paginas web</label>
+            <input type="checkbox" id="Paginas web" name="habil" required>
+            <label for="Estructuras de datos">Estructuras de datos</label>
+            <input type="checkbox" id="Estructuras de datos" name="habil" required>
+        </div>
+        <br>
+        <div>
+            <label for="perfil">Perfil</label>
+            <br>
+            <textarea></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+        </form>
+    </body>
+</html>

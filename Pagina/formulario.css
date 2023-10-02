@@ -1,0 +1,17 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    height: 100%;
+    background-color: aquamarine;
+    border-style: solid;
+    border: 1px;
+    border-color: black;
+}
+.grid-item1{
+    background-color: lightgreen;
+}
+.grid-item2{
+    background-color: lightcyan;
+    text-align: justify;
+}
+

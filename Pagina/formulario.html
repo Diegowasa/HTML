@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="formulario.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item1"></div>
+        <div class="grid-item2">
+            <h1>Formulario</h1>
+            <p>
+                <form action="formulario.php" method="post">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required><br>
+                    <label for="apellidos">Apellidos:</label><br>
+                    <input type="text" id="apellidos" name="apellidos" required><br>
+                
+                    <label for="nacimiento">Fecha de Nacimiento:</label><br>
+                    <input type="date" id="nacimiento" name="nacimiento" required><br>
+                
+                    <label for="ocupacion">Ocupacion:</label><br>
+                    <input type="text" id="ocupacion" name="ocupacion" required><br>
+            
+                    <label for="contacto">Contacto:</label><br>
+                    <input type="int" id="contacto" name="contacto" required><br>
+                
+                    
+                    <label for="nacionalidad">Nacionalidad:</label><br>
+                    <select id="nacionalidad" name="nacionalidad" required><br>
+                        <option value="Perú">Perú</option><br>
+                        <option value="Brasil">Brasil</option><br>
+                        <option value="Chile">Chile</option><br>
+                        <option value="Argentina">Argentina</option><br>
+                    </select><br>
+                
+            
+                    <label for="nivel_ingles">Nivel de ingles:</label><br>
+                    <input type="radio" id="A1" name="nivel_ingles" value="A1" required>
+                    <label for="A1">A1</label><br>
+                    <input type="radio" id="A2" name="nivel_ingles" value="A2">
+                    <label for="A2">A2</label><br>
+                    <input type="radio" id="B1" name="nivel_ingles" value="B1">
+                    <label for="B1">B1</label><br>
+                    <input type="radio" id="B2" name="nivel_ingles" value="B2">
+                    <label for="B2">B2</label><br>
+                    <input type="radio" id="A1" name="nivel_ingles" value="C1">
+                    <label for="C1">C1</label><br>
+                    <input type="radio" id="C2" name="nivel_ingles" value="C2">
+                    <label for="C2">C2</label><br>
+                
+                    <label for="lenguajes">Lenguajes de programación: </label><br>
+                    <select id="lenguajes" name="lenguajes[]" multiple>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="csharp">C#</option>
+                    <option value="php">PHP</option>
+                    <option value="ruby">Ruby</option>
+                    </select><br>
+
+                    
+                    <label for="aptitudes">Aptitudes:</label><br><br>
+                    <input type="text" id="aptitudes" name="aptitudes" required>
+                    
+                    <datalist id="aptitudes">
+                        <option value="Toma de decisiones">
+                        <option value="Organizacion">
+                        <option value="Pensamiento critico">
+                        <option value="Habilidades interpersonales">
+                        <option value="Manejo del estres">
+                        <option value="Trabajo bajo presion">
+                        <option value="Persuasion">
+                    </datalist><br>
+
+                    <label for="habilidades">Habilidades:</label><br>
+                    <input type="checkbox" id="habilidades1" name="habilidades[]" value="Comunicacion efectiva">
+                    <label for="habilidades1">Comunicacion efectiva</label><br>
+                    <input type="checkbox" id="habilidades2" name="habilidades[]" value="Trabajo en equipo">
+                    <label for="habilidades2">Trabajo en equipo</label><br>
+                    <input type="checkbox" id="habilidades3" name="habilidades[]" value="Adaptabilidad">
+                    <label for="habilidades3">Adaptabilidad</label><br>
+                    <input type="checkbox" id="habilidades4" name="habilidades[]" value="Orientacion al cliente">
+                    <label for="habilidades4">Orientacion al cliente</label><br>
+                    <input type="checkbox" id="habilidades5" name="habilidades[]" value="Liderazgo">
+                    <label for="habilidades5">Liderazgo</label><br>
+                
+                    <label for="perfil">Perfil:</label><br><br>
+		            <textarea id="perfil" name="perfil" rows="5" cols="40" required></textarea><br>
+                    
+                    <input type="submit" name="subir">
+                </form>
+                
+        </div>
+        <div class="grid-item1"></div>
+    </div>
+</body>
+</html>

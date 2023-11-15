@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>TODO list</title>
+    <title>DBP</title>
     <style>
       .completed {
         text-decoration: line-through;
@@ -13,50 +13,63 @@
         document.querySelector('#new-task').onsubmit = (event) => {
           event.preventDefault();
 
-          const taskInput = document.querySelector('#task');
-          const taskText = taskInput.value.trim();
-
-          if (taskText === '') {
-            alert('Por favor, introduce una tarea válida.');
-            return;
-          }
-
           const cb = document.createElement('input');
           cb.setAttribute('type', 'checkbox');
           const li = document.createElement('li');
-          const taskTextSpan = document.createElement('span');
-          taskTextSpan.textContent = taskText;
+          li.appendChild(cb);
+          li.appendChild(
+            document.createTextNode(document.querySelector('#task').value)
+          );
 
-          const deleteButton = document.createElement('button');
-          deleteButton.textContent = 'X';
-          deleteButton.addEventListener('click', function () {
-            li.remove();
+          const buttonEliminar = document.createElement('button');
+          buttonEliminar.textContent = 'X';
+
+          buttonEliminar.addEventListener('click', () => {
+            li.parentNode.removeChild(li);
           });
 
-          li.appendChild(cb);
-          li.appendChild(taskTextSpan);
-          li.appendChild(deleteButton);
-
+          li.appendChild(buttonEliminar);
           cb.addEventListener('change', function () {
             if (this.checked) {
-              taskTextSpan.classList.add('completed');
+              li.classList.add('completed');
             } else {
-              taskTextSpan.classList.remove('completed');
+              li.classList.remove('completed');
             }
           });
-
           document.querySelector('#tasks').appendChild(li);
 
-          taskInput.value = '';
+          document.querySelector('#task').value = '';
+
+          return false;
         };
+
+        const buttonMarcarTodos = document.createElement('button');
+        buttonMarcarTodos.textContent = 'Marcar Todos';
+
+        buttonMarcarTodos.addEventListener('click', () => {
+          const checkboxes = document.querySelectorAll('#tasks input[type="checkbox"]');
+          checkboxes.forEach((checkbox) => {
+            checkbox.checked = true; 
+            checkbox.parentNode.classList.add('completed');
+          });
+        });
+
+        document.querySelector('#tasks').before(buttonMarcarTodos);
       });
     </script>
   </head>
   <body>
+    <p>Computer Science</p>
     <h1>Tasks</h1>
     <form id="new-task">
-      <input id="task" autocomplete="off" autofocus placeholder="New Task" type="text">
-      <input type="submit">
+      <input
+        id="task"
+        autocomplete="off"
+        autofocus
+        placeholder="New Task"
+        type="text"
+      />
+      <input type="submit" />
     </form>
     <ol id="tasks"></ol>
   </body>

@@ -1,0 +1,16 @@
+C:\Users\diego\source\repos\Xamarin formulario\Xamarin formulario\Xamarin formulario\obj\Debug\netstandard2.0\Xamarin formulario.csproj.AssemblyReference.cache
+C:\Users\diego\source\repos\Xamarin formulario\Xamarin formulario\Xamarin formulario\obj\Debug\netstandard2.0\Xamarin formulario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\diego\source\repos\Xamarin formulario\Xamarin formulario\Xamarin formulario\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\diego\source\repos\Xamarin formulario\Xamarin formulario\Xamarin formulario\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\diego\source\repos\Xamarin formulario\Xamarin formulario\Xamarin formulario\obj\Debug\netstandard2.0\Xamarin formulario.AssemblyInfoInputs.cache
+C:\Users\diego\source\repos\Xamarin formulario\Xamarin formulario\Xamarin formulario\obj\Debug\netstandard2.0\Xamarin formulario.AssemblyInfo.cs
+C:\Users\diego\source\repos\Xamarin formulario\Xamarin formulario\Xamarin formulario\obj\Debug\netstandard2.0\Xamarin formulario.csproj.CoreCompileInputs.cache
+C:\Users\diego\source\repos\Xamarin formulario\Xamarin formulario\Xamarin formulario\obj\Debug\netstandard2.0\Xamarin formulario.dll
+C:\Users\diego\source\repos\Xamarin formulario\Xamarin formulario\Xamarin formulario\obj\Debug\netstandard2.0\refint\Xamarin formulario.dll
+C:\Users\diego\source\repos\Xamarin formulario\Xamarin formulario\Xamarin formulario\obj\Debug\netstandard2.0\Xamarin formulario.pdb
+C:\Users\diego\source\repos\Xamarin formulario\Xamarin formulario\Xamarin formulario\bin\Debug\netstandard2.0\Xamarin formulario.deps.json
+C:\Users\diego\source\repos\Xamarin formulario\Xamarin formulario\Xamarin formulario\bin\Debug\netstandard2.0\Xamarin formulario.dll
+C:\Users\diego\source\repos\Xamarin formulario\Xamarin formulario\Xamarin formulario\bin\Debug\netstandard2.0\ref\Xamarin formulario.dll
+C:\Users\diego\source\repos\Xamarin formulario\Xamarin formulario\Xamarin formulario\bin\Debug\netstandard2.0\Xamarin formulario.pdb
+C:\Users\diego\source\repos\Xamarin formulario\Xamarin formulario\Xamarin formulario\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\diego\source\repos\Xamarin formulario\Xamarin formulario\Xamarin formulario\obj\Debug\netstandard2.0\CV.xaml.g.cs

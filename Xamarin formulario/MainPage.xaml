@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_formulario.MainPage">
+
+    <StackLayout Background="#f6f6f6">
+        <Frame Margin="8"
+               BackgroundColor="White">
+            <StackLayout>
+                <Entry x:Name="Label_nombre"
+                       Placeholder="Ingrese su nombre"
+                       FontSize="Medium"
+                       PlaceholderColor="Black"
+                       TextColor="Black"/>
+                <Entry x:Name="Label_apellido"
+                       Placeholder="Ingrese su apellido"
+                       FontSize="Medium"
+                       PlaceholderColor="Black"
+                       TextColor="Black"/>
+                <Entry x:Name="Label_edad"
+                       Placeholder="Ingrese su edad"
+                       FontSize="Medium"
+                       PlaceholderColor="Black"
+                       TextColor="Black"/>
+                <Entry x:Name="Label_correo"
+                       Placeholder="Ingrese su correo"
+                       FontSize="Medium"
+                       PlaceholderColor="Black"
+                       TextColor="Black"/>
+                <Entry x:Name="Label_dni"
+                       Placeholder="Ingrese su dni"
+                       FontSize="Medium"
+                       PlaceholderColor="Black"
+                       TextColor="Black"/>
+            </StackLayout>
+        </Frame>
+        <Button x:Name="Boton_registrar"
+                Text="Registrar"
+                FontSize="Large"
+                Clicked="Boton_registrar_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
